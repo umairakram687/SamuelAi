@@ -1,51 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 
-@font-face {
-    font-family: TrapBold;
-    src: url('./assets/fonts/trap/Trap-Bold.otf');
-    font-weight: bold;
-}
-@font-face {
-    font-family: TrapSemiBold;
-    src: url('./assets/fonts/trap/Trap-SemiBold.otf');
-    font-weight: bold;
-}
-@font-face {
-    font-family: TrapMedium;
-    src: url('./assets/fonts/trap/Trap-Medium.otf');
-    font-weight: 500;
-}
-@font-face {
-    font-family: TrapRegular;
-    src: url('./assets/fonts/trap/Trap-Regular.otf');
-    font-weight: 400;
-}
-@font-face {
-    font-family: TrapLight;
-    src: url('./assets/fonts/trap/Trap-Light.otf');
-    font-weight: 300;
-}
-
-.trap-bold {
-    font-family: TrapBold, sans-serif;
-}
-.trap-semibold {
-    font-family: TrapSemiBold, sans-serif;
-}
-.trap-medium {
-    font-family: TrapMedium, sans-serif;
-}
-.trap-regular {
-    font-family: TrapRegular, sans-serif;
-}
-.trap-thin {
-    font-family: TrapLight, sans-serif;
-}
-
-
-
-
 .inter-extrabold {
     font-family: 'Inter', sans-serif;
     font-weight: 800;
@@ -76,31 +31,32 @@
 h1 {
     font-size: 78px;
     line-height: 80px;
-    font-family: TrapBold, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin-bottom: 0px;
 }
 
 h2 {
     font-size: 56px;
-    line-height: 72px;
-    font-family: TrapSemiBold, sans-serif;
+    line-height: 64px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
     margin-bottom: 0px;
 }
 h3 {
     font-size: 24px;
     line-height: 30px;
-    font-family: TrapBold, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin-bottom: 0px;
 }
 h4 {
     font-size: 20px;
     line-height: 24px;
-    font-family: TrapMedium, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin-bottom: 0px;
 }
 p {
     font-size: 16px;
-    font-family: TrapRegular, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin-bottom: 0px;
 }
 

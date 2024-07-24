@@ -1,13 +1,12 @@
 import React from 'react'
 import "../components/Home/Home.css"
-import BtnStartFreeTrail from '../components/BtnStartFreeTrail/BtnStartFreeTrail'
+import Hero from '../components/Home/Hero'
 
 const Home = () => {
   return (
-    <div> Home
-      
-     
-       </div>
+    <div> 
+     <Hero />
+    </div>
   )
 }
 

@@ -77,9 +77,9 @@ function App() {
 
   return (
     <div className='w-full max-w-[1280px] m-auto p-auto'>
-      <Header activeSection={activeSection} currentPage={location.pathname} />
+      <Header />
       <Routes>
-        <Route path="/" element={<Home sectionRefs={sectionRefs} />} />
+        <Route path="/" element={<Home />} />
       </Routes>
       <Footer />
     </div>
