@@ -76,7 +76,7 @@ function App() {
   }, [sectionRefs, location.pathname]);
 
   return (
-    <div className='w-full max-w-[1280px] m-auto p-auto'>
+    <div className='w-full'>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
