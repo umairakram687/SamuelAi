@@ -7,8 +7,8 @@ import {
 import AutoFunnelLogo from "../../assets/img/autofunnel-logo.png";
 
 const Header = ({ activeSection, currentPage }) => {
-  const activeStyle = "text-[#C61E46] inter-medium text-[16px]";
-  const nonActiveStyle = "text-[#000] inter-medium text-[16px]";
+  const activeStyle = "text-[#fff] inter-medium text-[16px]";
+  const nonActiveStyle = "text-[#fff] inter-medium text-[16px]";
   const [menuOpen, setMenuOpen] = useState(false);
   const [isSticky, setSticky] = useState(false);
 
@@ -33,15 +33,15 @@ const Header = ({ activeSection, currentPage }) => {
   }, []);
 
   const isActive = (section) => {
-    if (currentPage === "/") {
-      return activeSection === section;
-    }
-    return currentPage.includes(section);
+    // if (currentPage === "/") {
+    //   return activeSection === section;
+    // }
+    // return currentPage.includes(section);
   };
 
   return (
-    <header className="w-full max-w-[1140px] mx-auto py-[26px]">
-      <div className="flex gap-[100px] sm:gap-[150px] w-full z-[100]">
+    <header className="w-full max-w-[1140px] mx-auto">
+      <div className="flex gap-[100px] sm:gap-[150px] z-[100] absolute py-[26px]">
         <div className="w-unset sm:w-[20%] text-[#C61E46] cursor-pointer">
           <Link to="/">
             <div className="flex gap-1 inter-bold text-[28px] leading-[36px] text-left">
