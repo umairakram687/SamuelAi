@@ -1,0 +1,14 @@
+.animated-word {
+    animation: WordSlideIn 0.8s ease-out forwards;
+}
+  
+@keyframes WordSlideIn {
+    0% {
+        transform: translateY(65%) rotateX(-95deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0) rotateX(0);
+        opacity: 1;
+    }
+}
