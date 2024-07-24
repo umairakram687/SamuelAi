@@ -1,57 +1,41 @@
-import {
-  DiscordOutlined,
-  TwitterOutlined,
-  InstagramOutlined,
-} from "@ant-design/icons";
-
+import { FacebookFilled, InstagramOutlined } from "@ant-design/icons";
+import AutoFunnelLogo from "../../assets/img/autofunnel-logo.png";
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="voxe-container flex flex-col gap-4 px-4 sm:px-2 md:px-0 pt-8">
-        <div className="flex flex-col gap-0 sm:gap-4">
-          <div className="inter-extrabold text-[36px] leading-[36px] text-left">
-            VOXE
-          </div>
-          <div className="flex flex-col sm:flex-row justify-between gap-6 pt-[24px] pb-[24px] sm:pb-[56px]">
-            <div className="flex gap-4">
-              <div className="h-[40px] w-[40px] bg-[#efecff] flex justify-center items-center rounded-[50%]">
-                <DiscordOutlined className="text-[20px]" />
-              </div>
-
-              <div className="h-[40px] w-[40px] bg-[#efecff] flex justify-center items-center rounded-[50%]">
-                <TwitterOutlined className="text-[20px]" />
-              </div>
-              <div className="h-[40px] w-[40px] bg-[#efecff] flex justify-center items-center rounded-[50%]">
-                <InstagramOutlined className="text-[20px]" />
-              </div>
-            </div>
-            <div className="flex flex-col justify-start gap-1">
-              <p className="inter-regular text-[14px] text-[#09001cb3]">
-                VOXE Finance s.r.o I Příčná 1892/4 I 110 00
-              </p>
-              <p className="inter-regular text-[14px] text-[#09001cb3]">
-                Praha, Czech Republic I ID: 14235528
-              </p>
-              <a
-                href="#"
-                className="cursor-pointer text-[12px] text-[#969697] border border-[#eeeef1] w-max px-[8px] py-[1px] rounded-[4px] hover:bg-[#ddd]"
-              >
-                Privacy Policy
-              </a>
-              <a
-                href="#"
-                className="cursor-pointer text-[12px] text-[#969697] border border-[#eeeef1] w-max px-[8px] py-[1px] rounded-[4px] hover:bg-[#ddd]"
-              >
-                Cookie Policy
-              </a>
-            </div>
-          </div>
+    <footer className="bg-[#000] py-[90px]">
+      <div className="af-container flex flex-col gap-6 px-4 sm:px-2 md:px-0 pt-8">
+        <div className="flex justify-center items-center">
+          <img src={AutoFunnelLogo} alt="AutoFunnel" className="w-[135px]" />
         </div>
-        <div className="w-full border-t-[1px] border-[#e1e0e8] py-3">
-          <p className="inter-regular text-[12px] text-[#09001cb3]">
-            © 2023, VOXE
-          </p>
+        <div className="flex justify-center items-center gap-12">
+            <a href="https://www.facebook.com/autofunnelai">
+              <FacebookFilled className="text-[42px] text-[#4719ff]" />
+            </a>
+            <a href="https://www.instagram.com/autofunnel.ai/">
+              <InstagramOutlined className="text-[42px] text-[#4719ff] cursor-pointer" />
+            </a>
+        </div>
+        <div className="flex justify-center items-center flex-wrap sm:flex-no-wrap gap-2">
+          <a href="#" className="inter-thin text-[16px] text-[#BDBACC]"> Blog </a>
+          <span className="inter-thin text-[16px] text-[#BDBACC]"> | </span>
+          <a href="#" className="inter-thin text-[16px] text-[#BDBACC]"> Support </a>
+          <span className="inter-thin text-[16px] text-[#BDBACC]"> | </span>
+          <a href="#" className="inter-thin text-[16px] text-[#BDBACC]"> Contact </a>
+          <span className="inter-thin text-[16px] text-[#BDBACC]"> | </span>
+          <a href="#" className="inter-thin text-[16px] text-[#BDBACC]"> Partners </a>
+          <span className="inter-thin text-[16px] text-[#BDBACC]"> | </span>
+          <a href="#" className="inter-thin text-[16px] text-[#BDBACC]"> Affiliates </a>
+        </div>
+        <div className="flex justify-center items-center flex-wrap sm:flex-no-wrap gap-2">
+          <a href="#" className="underline inter-thin text-[14px] text-[#766f92]"> Terms of Service </a>
+          <span className="inter-thin text-[14px] text-[#766f92]"> | </span>
+          <a href="#" className="underline inter-thin text-[14px] text-[#766f92]"> Privacy Policy </a>
+          <span className="inter-thin text-[14px] text-[#766f92]"> | </span>
+          <a href="#" className="underline inter-thin text-[14px] text-[#766f92]"> Refund & Trial Policy </a> 
+        </div>
+        <div className="flex justify-center items-center">
+          <p className="inter-thin text-[14px] text-[#766f92]">PageCraft LLC</p>
         </div>
       </div>
     </footer>
